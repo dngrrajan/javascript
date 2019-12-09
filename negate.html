@@ -1,0 +1,21 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demoo"></p>
+<p id="demo1"></p>
+<script type="text/javascript">
+var ele1=prompt("Enter the elements of the array : ");
+arrs1=ele1.split(" ");
+arrs=ele1.split(" ");
+var array=[];
+var length=arrs1.length-1;
+while(length>=0){
+arrs1[length]*=-1;
+length--;
+}
+document.getElementById("demo").innerHTML="The Original Array:"+arrs;
+document.getElementById("demo1").innerHTML="The Negated Array:"+arrs1;
+
+</script>
+</body>
+</html>

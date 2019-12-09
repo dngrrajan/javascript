@@ -1,0 +1,19 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script type="text/javascript">
+var ele=prompt("Enter the elements of the array : ");
+arrs=ele.split(" ");
+var array=[];
+var length=arrs.length;
+var i=length-1;
+while(i>=0){
+array.push(arrs[i]);
+i--;
+}
+document.getElementById("demo").innerHTML="The Original Array:"+arrs;
+document.getElementById("demo1").innerHTML="The Reversed Array:"+array;
+</script>
+</body>
+</html>

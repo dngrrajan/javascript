@@ -1,0 +1,15 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script type="text/javascript">
+var ele=prompt("Enter the elements of the array : ");
+arrs=ele.split(" ");
+var maximum=Math.max.apply(null,arrs);
+var minimum=Math.min.apply(null,arrs);
+document.getElementById("demo").innerHTML="The Smallest Element is "+minimum;
+document.getElementById("demo1").innerHTML="The Biggest Element is "+maximum;
+
+</script>
+</body>
+</html>
