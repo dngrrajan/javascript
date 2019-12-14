@@ -1,0 +1,18 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var num=prompt("Enter the number for multiples");
+var multiplies=prompt("Enter the multiples range");
+arraymultiply(num,multiplies);
+function arraymultiply(num,multiplies){
+var array=[];
+for(var i=1;i<=multiplies;i++){
+var ins=num*i;
+array.push(ins);
+}
+document.getElementById("demo").innerHTML="The array Multiplies of "+num+" with "+multiplies+" steps is <br>"+array;
+}
+</script>
+</body>
+</html>
