@@ -1,0 +1,22 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var width=prompt("Enter the width : ");
+var height=prompt("Enter the Height :");
+var color=prompt("Enter the Color :");
+draw(width,height,color);
+
+function draw(w,h,c){
+let div=document.createElement('div');
+div.style.width=w+'px';
+div.style.height=h+'px';
+div.style.border='1px solid '+c;
+div.style.backgroundColor=c;
+div.style.borderRadius='50%';
+document.body.appendChild(div);
+}
+
+</script>
+</body>
+</html>

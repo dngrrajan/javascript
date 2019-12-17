@@ -1,0 +1,25 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script type="text/javascript">
+var arr=prompt("Enter the elements od the array with Spaces:");
+var array=arr.split(" ");
+var incelement=includer(array);
+
+function includer(array){
+var uniqueArray = [];
+for(i=0; i < array.length; i++){
+if(uniqueArray.indexOf(array[i]) === -1) {
+uniqueArray.push(array[i]);
+}
+}
+return uniqueArray;
+}
+
+
+document.getElementById("demo").innerHTML="The Original Array"+array;
+document.getElementById("demo1").innerHTML="The Modified Array"+incelement;
+</script>
+</body>
+</html>

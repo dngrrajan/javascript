@@ -1,0 +1,43 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script type="text/javascript">
+var First=prompt("Enter the First Number:");
+var second=prompt("Enter the Second Number:");
+
+
+
+function add(f,s){
+var add=parseInt(f)+parseInt(s);
+document.getElementById("demo").innerHTML="The Addition of "+First+" and "+second+" is "+add;
+}
+
+function sub(f,s){
+var sub=parseInt(f)-parseInt(s);
+document.getElementById("demo1").innerHTML="The Subtraction of "+First+" and "+second+" is "+sub;
+}
+
+function multiply(f,s){
+var multiply=parseInt(f)*parseInt(s);
+document.getElementById("demo2").innerHTML="The Multiplication of "+First+" and "+second+" is "+multiply;
+}
+
+function divide(f,s){
+var divide=parseInt(f)/parseInt(s);;
+document.getElementById("demo3").innerHTML="The Division of "+First+" and "+second+" is "+divide;
+}
+add(First,second);
+sub(First,second);
+multiply(First,second);
+divide(First,second);
+
+
+
+
+
+</script>
+</body>
+</html>

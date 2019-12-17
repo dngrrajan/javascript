@@ -1,6 +1,7 @@
 <html>
 <body>
 <p id="demo"></p>
+<<<<<<< HEAD
 <p id="demo1"></p>
 <script type="text/javascript">
 var ele=prompt("Enter the elements of the array : ");
@@ -14,6 +15,20 @@ i--;
 }
 document.getElementById("demo").innerHTML="The Original Array:"+arrs;
 document.getElementById("demo1").innerHTML="The Reversed Array:"+array;
+=======
+<script type="text/javascript">
+var num=prompt("Enter the number for multiples");
+var multiplies=prompt("Enter the multiples range");
+arraymultiply(num,multiplies);
+function arraymultiply(num,multiplies){
+var array=[];
+for(var i=1;i<=multiplies;i++){
+var ins=num*i;
+array.push(ins);
+}
+document.getElementById("demo").innerHTML="The array Multiplies of "+num+" with "+multiplies+" steps is <br>"+array;
+}
+>>>>>>> ac36e763d15149fc5d70b45e0365d5195efe5636
 </script>
 </body>
 </html>

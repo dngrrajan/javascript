@@ -1,0 +1,29 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var arr=prompt("Enter the elements od the array with Spaces:");
+var chars=prompt("Character to be checked :");
+var array=arr.split(" ");
+var incelement=includer(array,chars);
+if (incelement==true){
+var result="The character "+chars+" is Presnt";
+}
+else{
+var result="The character "+chars+" is NOT Presnt";;
+}
+function includer(array,chars){
+var elements=array.length;
+for(var i=0;i<elements-1;i++){
+if (array[i].includes(chars)){
+return true;
+}
+}
+return false;
+}
+
+
+document.getElementById("demo").innerHTML="The Value of the Exponential root is "+result;
+</script>
+</body>
+</html>

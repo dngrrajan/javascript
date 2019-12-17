@@ -1,0 +1,19 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var elements=prompt("Enter the elements of the array : ");
+var arr=elements.split(" ");
+var len=arr.length;
+var total=0;
+for (var i=0;i<=arr.length-1;i++){
+var nums=arr[i]+i;
+total +=parseInt(nums);
+}
+document.getElementById("demo").innerHTML="The Sum of the Array Elements with the values is <strong>"+total+"</strong>";
+
+
+
+</script>
+</body>
+</html>

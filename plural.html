@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var string=prompt("Enter the String to check :");
+var str=string.length;
+var last=string.charAt(str-1);
+if(last=='s' || last=='S'){
+var result="Plural";
+}
+else{
+var result="Singular";
+}
+document.getElementById("demo").innerHTML="The String is "+result;
+</script>
+</body>
+</html>

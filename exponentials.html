@@ -1,0 +1,19 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var val=prompt("Enter the Toal value :");
+var n=prompt("Enter the the value of the Power :");
+var count=0;
+var result=expntl(val,n);
+document.getElementById("demo").innerHTML="The Value of the Exponential root is "+result;
+ 
+function expntl(val,n){ 
+while(n ** count!=val){
+count++;
+}
+return count;
+}
+</script>
+</body>
+</html>
