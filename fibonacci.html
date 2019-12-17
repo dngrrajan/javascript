@@ -1,0 +1,18 @@
+<html>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var ele=prompt("Enter the elements of the array : ");
+var a=0;
+var b=1;
+var c;
+for (var i=0;i<=ele;i++){
+c=a+b;
+a=b;
+b=c;
+c +=c;
+}
+document.getElementById("demo").innerHTML="The Original Array:"+c;
+</script>
+</body>
+</html>
