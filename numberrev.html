@@ -1,0 +1,15 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demoo"></p>
+
+<script type="text/javascript">
+var ele1=prompt("Enter the number to be reversed : ");
+var elements=ele1.split("");
+reversed=elements.reverse().toString();
+var rev=reversed.replace(/,/g,"")
+document.getElementById("demo").innerHTML="The First Array:"+ele1;
+document.getElementById("demoo").innerHTML="The Second Array:"+rev;
+</script>
+</body>
+</html>
